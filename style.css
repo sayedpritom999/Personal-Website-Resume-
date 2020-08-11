@@ -52,8 +52,7 @@ body {
         margin-top: 30px;
     }
     .header-sec {
-        height: fit-content;
-        margin-bottom: 50px;
+        height: 500px;
     }
 }
 @media only screen and (max-width: 486px) {
@@ -63,7 +62,8 @@ body {
 }
 @media only screen and (max-width: 357px) {
     .header-sec {
-       margin-bottom: 40px;
+        height: fit-content;
+        margin-bottom: 50px;
     }
     .avater{
         display: none;
@@ -109,8 +109,7 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     height: fit-content;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 @media only screen and (max-width: 575px) {
     .second-sec {
@@ -119,7 +118,7 @@ body {
     }
     .second-sec img {
         width: 40%;
-        height: auto%;
+        height: auto;
         margin: 0 auto 40px auto;
     }
 }

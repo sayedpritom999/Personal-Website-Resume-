@@ -2,34 +2,13 @@ body {
     margin: 0;
     font-family: poppins;
 }
-/* First section */
-.header-sec {
-    background-image: url("images/header-bg.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% auto;
-    height: 55vw;
-    padding-top: 20%;
 
-}
-.half-width {
-    width: 50%;
-    float: left;
-    height: 230px;
-}
-.half-width-child {
-    padding: 0 10%;
-}
-.fallback-avater {
-    display: none;
-}
-.half-width-child p, #header-about-me-fallback p {
-    margin-bottom: 30px;
-}
-#Your-name {
-    color: #ec4c7a;
-    font-weight: 700;
-    padding: 10px 0;
+
+@media only screen and (max-width: 575px) {
+    .justified-center {
+        text-align: justify;
+        text-align-last: center;
+    }
 }
 .button {
     padding: 10px 20px;
@@ -39,91 +18,109 @@ body {
     border-radius: 5px;
     font-weight: 500;
     margin-top: 80px;
+}
 
-}
-@media only screen and (max-width: 767px) {
-    #header-about-me{
-        display: none;
-    }
-    #header-about-me-fallback {
-        padding: 0 5%;
-    }
-    #header-about-me-fallback p {
-        margin-top: 30px;
-    }
-    .header-sec {
-        height: 500px;
-    }
-}
-@media only screen and (max-width: 486px) {
-    .half-width {
-        height: 180px;
-    }
-}
-@media only screen and (max-width: 357px) {
-    /* .header-sec {
-        height: 150vw;
-    } */
-    .avater{
-        display: none;
-    }
-    .fallback-avater {
-        display: block;
-        width: 40%;
-        height: auto;
-        margin: 0 auto;
-    }
-    .about {
-        width: 100%;
-    }
-    .half-width-child {
-        padding-left: 5%;
-    }
-    .half-width {
-        height: auto;
-        float: none;
+/* First section */
 
-    }
-    #header-about-me-fallback, .half-width {
-        text-align: center;
-    }
-    #header-about-me-fallback p {
-        margin-top: 0px;
-    }
+.header-sec {
+    background-image: url("images/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 100px 0;
 }
-@media only screen and (min-width: 1200px) {
-    .header-sec {
-        padding-top: 200px;
-    }
+#Your-name {
+    color: #ec4c7a;
+    font-weight: 700;
+    padding: 10px 0;
 }
-@media only screen and (min-width: 768px) {
-    #header-about-me-fallback{
-        display: none;
-    }
-}
+
+
 /* second section */
 .second-sec {
     background-image: url("images/biography-bg.png");
-    background-size: auto 100%;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    height: fit-content;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    height: auto;
+    padding: 100px 0;
+    margin-bottom: 100px;
 }
 @media only screen and (max-width: 575px) {
     .second-sec {
         text-align: center;
-        padding: 20px;
+        padding: 80px 20px;
     }
     .second-sec img {
         width: 40%;
-        height: auto%;
+        height: auto;
         margin: 0 auto 40px auto;
     }
 }
+/* work section */
+.work-sec {
+    background-image: url("images/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: right;
+    height: fit-content;
+    padding: 100px 0;
+}
+.work-sec h2 {
+    margin-bottom: 50px;
+}
+.work img {
+    width: 98%;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 2px rgba(50, 50, 50, 0.16);
+}
+.work img:hover {
+    width: 100%;
+    box-shadow: 0px 0px 25px 3px rgba(0, 217, 255, 0.36);
+}
 
+@media only screen and (max-width: 575px) {
+    .work {
+        margin: 10px auto;
+    }
+}
+/* Fourth section(What clients say) */
+footer {
+    padding-top: 100px;
+    background-image: url("images/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: fit-content;
+}
+.e-mail {
+    background-color: #ec4c7a;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 20px;
+    width: 50%;
+}
+footer small {
+    color: gray;
+}
+footer > div > * {
+    margin: 20px auto;
+}
+.copyright {
+    display: inline-block;
+    margin: 80px 0 20px 0;
+} 
 
+@media only screen and (max-width: 767px) {
+    .e-mail {
+        width: 70%;
 
-
-/* third section */
+    }
+}
+@media only screen and (max-width: 480px) {
+    .e-mail h5 {
+        font-size: 16px;
+        word-break: break-all;
+    }
+}

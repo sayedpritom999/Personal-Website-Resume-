@@ -5,55 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pritom Web Dev</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-- first section -->
     <section class="header-sec">
-        <img class="img-fluid fallback-avater" src="images/avater for 350px width.png" alt="">
-        <section class="container header-sec-content">
-            <div class="half-width about">
-                <div class="half-width-child">
-                    <h2>Hello I'm</h2>
-                    <h1 id="Your-name">Sayed Pritom</h1>
-                    <div id="header-about-me">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maxime assumenda necessitatibus delectus odio.</p>
+            <section class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6 d-sm-none">
+                        <img src="images/sayed.png" class="img-fluid mb-5" alt="">
+                    </div>
+                    <div class="col-sm-6 col-9 my-auto text-center text-sm-left">
+                        <h2 class="pb-3">Hello I'm</h2>
+                        <h1 id="Your-name"  class="pb-3">Sayed Pritom</h1>
+                        <div id="header-about-me" class="d-sm-none d-md-block">
+                            <p class="pb-3 justified-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maxime assumenda necessitatibus delectus odio.</p>
+                            <a href="#" class="button">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block col-sm-6 ">
+                        <img src="images/sayed.png" class ="img-fluid p-md-5" alt="">
+                    </div>
+                    <div id="header-about-me" class="col-12 mt-4 d-none d-sm-block d-md-none">
+                        <p class="pb-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maxime assumenda necessitatibus delectus odio.</p>
                         <a href="#" class="button">Hire Me</a>
                     </div>
                 </div>
-            </div>
-            <div class="half-width avater">
-                <div class="half-width-child">
-                    <img class="img-fluid" src="images/sayed.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="container">
-            <div id="header-about-me-fallback">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maxime assumenda necessitatibus delectus odio.</p>
-                <a href="#" class="button">Hire Me</a>
-            </div>
-        </section>
+            </section>
     </section>
-    <!-- first section -->
-
-    <!-- second section -->
+    <!-- second section(Biography) -->
     <section class="second-sec">
         <section class="container">
             <div class="row justify-content-between">
                 <div class="col-sm-4">
                     <img class="img-fluid" src="images/sayed_dream.png" alt="">
                 </div>
-                <div class="col-sm-6">
-                    <h2 class="py-2">Biography</h2>
-                    <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti temporibus quas totam iste facere vitae reprehenderit exercitationem distinctio iure incidunt quis voluptatum beatae, nulla, atque numquam non iusto ab itaque</p>
-                    <a href="" class="button py-2">Download CV</a>
+                <div class="col-sm-6 my-auto">
+                    <div>
+                        <h2 class="py-2">Biography</h2>
+                        <p class="py-2 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti temporibus quas totam iste facere vitae reprehenderit exercitationem distinctio iure incidunt quis voluptatum beatae, nulla, atque numquam non iusto ab itaque</p>
+                        <a href="" class="button py-2">Download CV</a>
+                    </div>
                 </div>
             </div>
         </section>
     </section>
-    <!-- second section -->
+    <!-- Third section(Latest Work) -->
+    <section class="work-sec">
+        <div class="container">
+            <h2 class="text-center">My Latest Works</h2>
+            <div class="row">
+                <div class="col-sm-4 col-9 work"><img class="img-fluid" src="images/latest-work/work-1.png" alt=""></div>
+                <div class="col-sm-4 col-9 work"><img class="img-fluid" src="images/latest-work/work-2.jpg" alt=""></div>
+                <div class="col-sm-4 col-9 work"><img class="img-fluid" src="images/latest-work/work-3.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- Fourth section(What clients say)  -->
+    <footer>
+        <div class="container text-center">
+            <h2>What Clients Say</h2>
+            <h6>Bruce Moccy</h6>
+            <small>Founder & CEO Alies</small>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="mx-auto e-mail"> 
+                <p>Leave me a message at</p>
+                <h5>sayedpritom999@gmail.com</h5>
+            </div>
+            <small class="copyright">A Happy Student of Programming Hero Initiative 2020</small>
+        </div>
+    </footer>
 </body>
 </html>
